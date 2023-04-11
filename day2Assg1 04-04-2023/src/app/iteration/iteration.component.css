@@ -1,0 +1,16 @@
+table{
+    background-color: aqua;
+    align-items: center;
+    border: 2px solid black;
+          
+}
+th{
+    font-size: 40px;
+    padding: 15px;
+    border: 2px solid black;
+}
+td{
+    font-size: 30px;
+    padding: 15px;
+    border: 2px solid black;
+}
