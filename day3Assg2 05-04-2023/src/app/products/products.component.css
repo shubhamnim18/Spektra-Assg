@@ -1,0 +1,53 @@
+/* Reset default styles for some elements */
+body, figure, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set default font and size */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Style header */
+  header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  /* Style navigation menu */
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Style main section */
+  main {
+    padding: 1rem;
+  }
+  
+  .products ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .products ul li {
+    flex-basis: calc(33.33% - 1rem);
+    margin: 0.5rem;
+    padding: 1rem
+  }  
+  footer{
+    background-color: brown;
+    color: aquamarine;
+  }

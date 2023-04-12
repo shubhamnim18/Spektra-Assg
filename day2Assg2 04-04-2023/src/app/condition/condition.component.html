@@ -1,0 +1,11 @@
+<input type="radio" id="valid" name="fav_language" value="VALID" (click)="val()">
+<label>Valid</label><br>
+<input type="radio" id="invalid" name="fav_language" value="INVALID" (click)="inval()">
+<label>InValid</label><br>
+
+<div *ngIf="valid; else invalid">
+    <h4>Data is Valid</h4>
+</div>
+<ng-template #invalid>
+    <h4>Data is Invalid</h4>
+</ng-template>

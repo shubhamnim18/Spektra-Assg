@@ -1,0 +1,22 @@
+<br>
+
+<button (click)="displayEmployee()" type="button" class="btn btn-warning btn-sm">Get Employee Details</button>
+<br/>
+<h3 *ngIf="employee && employee.length">Employee Details</h3>
+<br/>
+<table class="table table-striped" *ngIf="employee && employee.length" >
+    <thead>
+        <th>Employee ID</th>
+        <th>Employee Name</th>
+        <th>Department</th>
+        <th>Email</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emps of employee">
+            <td>{{emps.id}}</td>
+            <td>{{emps.name}}</td>
+            <td>{{emps.dept}}</td>
+            <td>{{emps.email}}</td>
+        </tr>
+    </tbody>
+</table>

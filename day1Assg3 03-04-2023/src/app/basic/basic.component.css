@@ -1,0 +1,16 @@
+form{
+    
+    text-align: center;
+    border-color: black;
+    background-image: url(image.avif);
+}
+input{
+    background-color:aliceblue
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: coral;
+}
+.B1 {
+    margin-right: 4px;
+}

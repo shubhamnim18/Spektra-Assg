@@ -1,0 +1,43 @@
+h4 {
+    text-align: center;
+    color: cadetblue;
+    background-color: rgb(74, 4, 74);
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+td {
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+
+}
+
+th,
+td {
+    background-color: #96D4D4;
+    padding: 15px;
+}
+
+.container {
+    height: 150px;
+    position: relative;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left:48%;
+    -ms-transform: translateY(-70%);
+    transform: translateY(-50%);
+}

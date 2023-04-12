@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="container mt-5">
+        <h2>Product List</h2>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <Th scope="col">Image</Th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products">
+                    <td>{{ product.id }}</td>
+                    <td>{{ product.name }}</td>
+                    <td>
+                        <img src={{product.image}} alt="Product 3" width="60" height="60">
+                    </td>
+                    <td>{{ product.price | currency }}</td>
+                    <td>
+                        <input type="number" [(ngModel)]="product.quantity" (ngModelChange)="updateTotal()" min="0" />
+                    </td>
+                    <td>{{ product.price * product.quantity | currency }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <button routerLink="/cart" (click)="setTotal()" type="button" class="btn btn-warning btn-sm">Check Out</button>
+    </div>
+</body>
+</html>
+
+<router-outlet></router-outlet>
