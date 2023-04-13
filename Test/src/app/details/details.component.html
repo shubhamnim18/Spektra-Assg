@@ -1,0 +1,32 @@
+<div>
+    <img [src]="mobileDet?.image" height="150" width="120">
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Mobile</th>
+                <th>Price</th>
+                <th>Color</th>
+                <th>RAM</th>
+                <th>Camera</th>
+                <th>Battery</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{mobileDet?.name}}</td>
+                <td>{{mobileDet?.price|currency}}</td>
+                <td>{{mobileDet?.color}}</td>
+                <td>{{mobileDet?.ram}}</td>
+                <td>{{mobileDet?.camera}}</td>
+                <td>{{mobileDet?.battery}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <b>Specification: {{mobileDet?.spec}}</b>
+    <div><button routerLink="/cart">Check Out</button></div>
+    
+</div>
+<hr>
+<router-outlet></router-outlet>

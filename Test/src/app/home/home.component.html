@@ -1,0 +1,8 @@
+<div  *ngFor="let mobile of mobiles">
+    <img [src]="mobile.image" height="150" width="120">
+    <h3>{{mobile.name}}</h3>
+    <b>{{mobile.price|currency}}</b><br>
+    <b>{{mobile.color}}</b><br>
+    <button routerLink="/details" (click)="setDetails(mobile)">View Details</button>
+    <hr>
+</div>

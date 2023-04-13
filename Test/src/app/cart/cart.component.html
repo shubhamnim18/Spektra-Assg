@@ -1,0 +1,20 @@
+<div>
+    <table>
+        <tbody>
+            <th>Image</th>
+            <th>Price</th>
+            <th>Color</th>
+            <!-- <th>Quantity</th> -->
+            <th>Payment</th>
+        </tbody>
+        <tbody>
+            <td><img [src]="mobileDet?.image" height="50" width="30" ></td>
+            <td>{{mobileDet?.price | currency}}</td>
+            <td>{{mobileDet?.color}}</td>
+            <!-- <td><input type="number" max="10" min="1" [(ngModel)]="quantity"></td> -->
+            <td><button (click)="msg()" routerLink="">Pay Now</button></td>
+        </tbody>
+    </table>
+    <br>
+</div>
+
