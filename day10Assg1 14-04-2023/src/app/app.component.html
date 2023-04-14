@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  
+  <h2>User Deatails</h2>
+  <br>
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Password</th>
+          <th>Job Description</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of userdetails">
+        <td>{{ user.userid}}</td>
+        <td>{{ user.username}}</td>
+        <td>{{ user.password }}</td>
+        <td>{{ user.job_description}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

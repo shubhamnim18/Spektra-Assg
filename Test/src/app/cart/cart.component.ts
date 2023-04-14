@@ -8,17 +8,18 @@ import { MobileService } from '../mobile.service';
 })
 export class CartComponent implements OnInit {
   
-  mobileDet:{ image: string, name: string, price: number, color: string, spec: string, camera: string, ram: string, battery: string}| undefined;
+  mobiledet:{ image: string, name: string, price: number, color: string, spec: string, camera: string, ram: string, battery: string, quantity:number}[]=[];
 
   constructor(private mobile: MobileService){
 
   }
 
   ngOnInit(): void {
-    this.mobileDet=this.mobile.getDetails();
+    this.mobiledet=this.mobile.getDetails();
       
   }
   msg():void{
+    this.mobiledet.pop();
     alert('Your Order has been Placed Thanks for Shopping');
   }
 }

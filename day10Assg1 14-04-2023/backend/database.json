@@ -1,0 +1,34 @@
+{
+    "user": [
+      {
+        "userid": "#DEV1232",
+        "username": "Shubham Nimbalakar",
+        "password": 1234,
+        "job_description":"Developer"
+      },
+      {
+        "userid": "#ST3892",
+        "username": "Rakesh Patil",
+        "password": 3423,
+        "job_description":"Testing"
+      },
+      {
+        "userid": "#DEV3242",
+        "username": "Shrinath Gidd",
+        "password": 3213,
+        "job_description":"Developer"
+      },
+      {
+        "userid": "#DO8371",
+        "username": "Rajat Nimbalakar",
+        "password": 2525,
+        "job_description":"DevOps"
+      },
+      {
+        "userid": "#DEV1123",
+        "username": "Prasad Nimbalakar",
+        "password": 3452,
+        "job_description":"Developer"
+      }
+    ]
+  }

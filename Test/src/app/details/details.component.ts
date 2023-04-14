@@ -8,7 +8,7 @@ import { MobileService } from '../mobile.service';
 })
 export class DetailsComponent implements OnInit{
 
-  mobileDet:{ image: string, name: string, price: number, color: string, spec: string, camera: string, ram:string, battery:string } | undefined;
+  mobileDet:{ image: string, name: string, price: number, color: string, spec: string, camera: string, ram:string, battery:string,quantity:number }[]=[];
 
   constructor(private mobile: MobileService){
 

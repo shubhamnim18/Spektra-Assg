@@ -8,7 +8,7 @@ import { MobileService } from '../mobile.service';
 })
 export class HomeComponent implements OnInit {
 
-  mobiles: { image: string, name: string, price: number, color: string, spec: string, camera: string, ram: string, battery: string }[] = [];
+  mobiles: { image: string, name: string, price: number, color: string, spec: string, camera: string, ram: string, battery: string, quantity:number }[] = [];
 
   constructor(private mobile: MobileService) {
 
@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
     this.mobiles = this.mobile.getMobiles();
   }
 
-  setDetails(mob: { image: string, name: string, price: number, color: string, spec: string, camera: string, ram: string, battery: string }) {
+  setDetails(mob: { image: string, name: string, price: number, color: string, spec: string, camera: string, ram: string, battery: string, quantity:number }) {
     this.mobile.setDetails(mob);
   }
 }
