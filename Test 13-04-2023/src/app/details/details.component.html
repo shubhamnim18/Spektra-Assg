@@ -1,0 +1,35 @@
+<div>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Mobile</th>
+                <th>Price</th>
+                <th>Color</th>
+                <th>RAM</th>
+                <th>Camera</th>
+                <th>Battery</th>
+                <th>Specification</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let mob of mobileDet">
+                <td><img [src]="mob.image" height="150" width="120"></td>
+                <td>{{mob.name}}</td>
+                <td>{{mob.price|currency}}</td>
+                <td>{{mob.color}}</td>
+                <td>{{mob.ram}}</td>
+                <td>{{mob.camera}}</td>
+                <td>{{mob.battery}}</td>
+                <td>{{mob.spec}}</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <hr>
+    <div><button routerLink="/cart">Check Out</button></div>
+    
+</div>
+<hr>
+<router-outlet></router-outlet>
