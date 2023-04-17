@@ -1,0 +1,32 @@
+{
+  "employee": [
+    {
+      "empname": "Shubham Nimbalakar",
+      "empemail": "shubham@gmail.com",
+      "dept": "Developer",
+      "addr": "Belagavi",
+      "id": 1
+    },
+    {
+      "empname": "Rakesh Patil",
+      "empemail": "rakesh@gmail.com",
+      "dept": "Tester",
+      "addr": "Chikodi",
+      "id": 2
+    },
+    {
+      "empname": "Omkar Patil",
+      "empemail": "omkar@gmail.com",
+      "dept": "Intern",
+      "addr": "Mumbai",
+      "id": 4
+    },
+    {
+      "empname": "Rajat Nimbalkar",
+      "empemail": "rajat@gmail.com",
+      "dept": "DevOps",
+      "addr": "Bengaluru",
+      "id": 5
+    }
+  ]
+}

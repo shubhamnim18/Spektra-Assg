@@ -1,0 +1,38 @@
+<div class="container wrapper">
+    <div class="row">
+        <!-- Issue table -->
+        <div class="col-md-12">
+            <div class="inner">
+                <button type="button" class="btn btn-dark" routerLink="/add-user">Add Employee</button>
+                <h3>Employee Details</h3>
+                <br>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Department</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let employees of EmployeesList">
+                            <th scope="row">{{employees.id}}</th>
+                            <td>{{employees.empname}}</td>
+                            <td>{{employees.empemail}}</td>
+                            <td>{{employees.dept}}</td>
+                            <td>{{employees.addr}}</td>
+                            <td>
+                                <button type="button" class="btn btn-success btn-sm move-right" [routerLink]="['/edit-user/', employees.id]">Edit</button>
+                                <button type="button" class="btn btn-danger btn-sm" (click)="deleteEmployee(employees)">Remove</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

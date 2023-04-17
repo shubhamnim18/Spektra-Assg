@@ -1,0 +1,12 @@
+h3{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    background-color: aliceblue;
+}
+label{
+    font-weight: bolder;
+}
+.btn{
+    margin-right: 10px;
+}
