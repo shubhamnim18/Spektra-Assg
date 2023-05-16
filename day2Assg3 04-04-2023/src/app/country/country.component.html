@@ -1,25 +1,24 @@
 <div style="text-align: center;">
-<h2>Country Selection Example</h2>
-<p>Select a country:</p>
-<select [(ngModel)]="selectedCountry">
-  <option *ngFor="let country of countries" [value]="country">{{ country }}</option>
-</select>
-<div [ngSwitch]="selectedCountry">
-  <div *ngSwitchCase="'India'">
-    <p>Delhi is Capital of India</p>
-  </div>
-  <div *ngSwitchCase="'USA'">
-    <p>Washington, D.C. is capital of USA</p>
-  </div>
-  <div *ngSwitchCase="'Australia'">
-    <p>Sydne is capital of Australia</p>
-  </div>
-  <div *ngSwitchCase="'Japan'">
-    <p>Tokyo is capital of Japan</p>
-  </div>
-  <div *ngSwitchDefault>
-    <p>Please select a country</p>
+  <h2>Country Selection Example</h2>
+  <p>Select a country:</p>
+  <select [(ngModel)]="selectedCountry">
+    <option *ngFor="let country of countries" [value]="country">{{ country }}</option>
+  </select>
+  <div [ngSwitch]="selectedCountry">
+    <div *ngSwitchCase="'India'">
+      <p>Delhi is Capital of India</p>
+    </div>
+    <div *ngSwitchCase="'USA'">
+      <p>Washington, D.C. is capital of USA</p>
+    </div>
+    <div *ngSwitchCase="'Australia'">
+      <p>Sydne is capital of Australia</p>
+    </div>
+    <div *ngSwitchCase="'Japan'">
+      <p>Tokyo is capital of Japan</p>
+    </div>
+    <div *ngSwitchDefault>
+      <p>Please select a country</p>
+    </div>
   </div>
 </div>
-</div>
-

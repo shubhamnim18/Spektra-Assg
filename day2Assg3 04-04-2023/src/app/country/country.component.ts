@@ -8,9 +8,5 @@ import { Component } from '@angular/core';
 export class CountryComponent {  
   countries:string[]=['India','USA','Australia','Japan'];
   selectedCountry:string='';
-
-  onSelect(){
-    console.log(this.selectedCountry);
-  }
 }
 
