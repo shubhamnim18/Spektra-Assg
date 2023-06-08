@@ -10,7 +10,6 @@ import { UserService } from 'src/app/service/user.service';
 })
 export class AddUserComponent implements OnInit{
   employeeForm: FormGroup;
-  employeeArr: any = [];
   ngOnInit() {
     this.addEmployee();
   }
